@@ -1,0 +1,45 @@
+@import "_partials/_variables"
+
+.navbar
+    width: 100vw
+    height: 15vh
+    background: black
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 12.5vw
+
+.brand
+    display: flex
+    align-items: center
+    text-decoration: none
+
+    h2
+        color: $lightGrey
+        font-weight: 300
+        letter-spacing: .125em
+        margin-left: 1em
+
+.linkList
+    display: flex
+    align-items: center
+    flex-direction: row
+    list-style: none
+
+.link
+    color: $lightGrey
+    font-size: 1rem
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 300
+    letter-spacing: .125em
+    transition: color .3s ease-in-out
+
+    &:hover
+        color: rgba(168, 188, 255, 0.651)
+
+.linkWithMargin
+    margin-left: 2em
+
+.activeLink
+    color: $primary
