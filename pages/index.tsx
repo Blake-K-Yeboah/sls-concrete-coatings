@@ -3,6 +3,8 @@ import Head from "next/head";
 
 // Page Components
 import Header from "../components/Home/Header";
+import LinkBoxSection from "../components/Home/LinkBoxSection";
+import WhoWeAre from "../components/Home/WhoWeAre";
 
 const Home: NextPage = () => {
     return (
@@ -12,6 +14,8 @@ const Home: NextPage = () => {
                 <meta charSet="utf-8" />
             </Head>
             <Header />
+            <WhoWeAre />
+            <LinkBoxSection />
         </>
     );
 };
