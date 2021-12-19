@@ -20,7 +20,7 @@ const Header: FC = () => {
                         className="btn primary"
                         onClick={() => {
                             window.scroll({
-                                top: screen.height,
+                                top: screen.height - 0.15 * screen.height,
                                 left: 0,
                                 behavior: "smooth",
                             });
