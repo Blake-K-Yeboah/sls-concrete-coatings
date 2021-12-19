@@ -18,7 +18,7 @@ const LinkBoxSection: FC = () => {
         },
         {
             text: "View Photo Gallery",
-            href: "/photo-gallery",
+            href: "/gallery",
             imgId: "3",
         },
     ];
