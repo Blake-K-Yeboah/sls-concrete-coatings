@@ -5,6 +5,7 @@ import Head from "next/head";
 import Header from "../components/Home/Header";
 import LinkBoxSection from "../components/Home/LinkBoxSection";
 import SprayPavingOverview from "../components/Home/SprayPavingOverview";
+import TestimonialSection from "../components/Home/TestimonialSection";
 import WhoWeAre from "../components/Home/WhoWeAre";
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
             <WhoWeAre />
             <LinkBoxSection />
             <SprayPavingOverview />
+            <TestimonialSection />
         </>
     );
 };
