@@ -1,0 +1,42 @@
+@import "_partials/variables"
+
+.grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    height: 100vh
+    padding: 15vh 0 0 0
+
+.leftSide
+    background-image: url("/images/backgrounds/left-side-bg.jpg")
+
+.rightSide
+    background-image: url("/images/backgrounds/right-side-bg.jpg")
+
+.leftSide, .rightSide
+    background-position: center
+    background-repeat: no-repeat
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    opacity: 0.75
+    transition: .3s ease-in-out
+
+    div
+        margin: 2em 0
+
+.leftSide:hover, .rightSide:hover
+    opacity: 1
+
+.firstBtn
+    margin-right: 2em
+
+.paragraph
+    color: rgba($lightGrey, .75)
+    width: 65%
+    margin: 0 auto 2.5vh auto
+    font-size: 1.5rem
+    font-weight: 300
+    text-align: center
+    line-height: 1.75em
+    letter-spacing: .05em
