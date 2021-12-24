@@ -5,6 +5,7 @@ import Image from "next/image";
 // Page Components
 import Title from "../../components/Common/Title";
 import AboutTheProduct from "../../components/OurProducts/AboutTheProduct";
+import CenteredTextSection from "../../components/OurProducts/CenteredTextSection";
 
 // Styling
 import styles from "../../styles/SprayPaving.module.sass";
@@ -45,6 +46,22 @@ const SprayPaving: NextPage = () => {
                 </div>
             </section>
             <AboutTheProduct />
+            <CenteredTextSection
+                title="will not peel or bubble"
+                text="Solvent based paving paints trap moisture in the concrete. The trapped moisture can cause the paint to bubble and lift off. Our product will not lift off, as it is not paint. Spray pave products are a decorative resurfacing material for renovating old or new concrete surfaces — being a single pack polymer modified cementaceous coating system designed to give excellent protective durability, while decorating existing concrete in a vast range of styles, textures, colours and patterns."
+            />
+            <CenteredTextSection
+                title="slip resistant"
+                text="Spray pave products are much safer to walk on in wet conditions than paving paint and other similar products as the product has an inbuilt textured finish for a more positive grip."
+            />
+            <CenteredTextSection
+                title="easy to clean"
+                text="The spray pave coating system is protected by the application of a clear sealer, which is petrol and solvent resistant. Oil and stains simply wash away leaving your concrete looking like new. It is recommended to re-seal the decorative concrete once a year to enhance and refresh the overall finish."
+            />
+            <Title type="center" text="Spray Pave Application" />
+            <div className={styles.applicationImgContainer}>
+                <Image src="/images/Application Process.png" layout="fill" />
+            </div>
         </>
     );
 };
