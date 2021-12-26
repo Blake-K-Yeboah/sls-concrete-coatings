@@ -62,6 +62,49 @@ const SprayPaving: NextPage = () => {
             <div className={styles.applicationImgContainer}>
                 <Image src="/images/Application Process.png" layout="fill" />
             </div>
+            <ul className={styles.applicationSteps}>
+                <li>
+                    <span className={styles.stepNum}>1. </span> The concrete
+                    area is acid etched using a mixture of hydrochloric acid and
+                    water and spreading it around with a stiff broom. This
+                    process cleans and opens the pores of the concrete in
+                    readiness for the application.
+                </li>
+                <li>
+                    <span className={styles.stepNum}>2. </span> The concrete is
+                    then high pressure washed to remove any residues and
+                    degregated concrete.
+                </li>
+                <li>
+                    <span className={styles.stepNum}>3. </span> When applying
+                    Spray Pave against any existing structures, we mask up using
+                    plastic provided to prevent splattering and spillages.
+                </li>
+                <li>
+                    <span className={styles.stepNum}>4. </span> A coat of primer
+                    is rolled on to the entire surface.
+                </li>
+                <li>
+                    <span className={styles.stepNum}>5. </span> We then spray or
+                    trowel a colour base coat on to the surface. This colour
+                    will represent the grout line.
+                </li>
+                <li>
+                    <span className={styles.stepNum}>6. </span> If supplying a
+                    decorative finish we either fix appropriate stencil or
+                    filament tape to achieve the desired finish.
+                </li>
+                <li>
+                    <span className={styles.stepNum}>7. </span> Apply 2 top
+                    coats using hopper gun and compressor.
+                </li>
+                <li>
+                    <span className={styles.stepNum}>8. </span>
+                    When dry we remove stencil or filament tape, airblow clean
+                    and apply 2 coats of sealant for protection from UV rays and
+                    other stains.
+                </li>
+            </ul>
         </>
     );
 };
