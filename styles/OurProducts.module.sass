@@ -58,3 +58,69 @@
         text-transform: uppercase
         font-weight: 100
         letter-spacing: .125em
+
+.commonApplications
+    padding: 10vh 12.5vw
+    background-image: url("/images/backgrounds/common-application-bg.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+.applicationList
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 1.5em
+    width: 65%
+    margin: 1em auto 0 auto
+
+.application
+    width: 100%
+    height: 60px
+    background: rgba(255,255,255,0.2)
+    display: flex
+    justify-content: center
+    align-items: center
+
+    span
+        color: #fff
+        font-weight: 300
+        letter-spacing: .125em
+
+.guaranteeSection
+    background: rgba(255,255,255,0.2)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 65%
+    margin: 3em auto 0 auto
+    padding: 3em 2em
+
+.star
+    color: $primary
+    font-size: 2rem
+    margin: 0 .5em
+
+.guaranteeHeading
+    color: #fff
+    font-weight: 300
+    letter-spacing: .125em
+    font-size: 1.5rem
+    display: flex
+    align-items: center
+    margin: 0 0 .75em 0
+
+.guaranteeParagraph
+    color: $lightGrey
+    font-weight: 300
+    letter-spacing: .125em
+    font-size: 1.1rem
+    width: 74.5%
+    text-align: center
+    line-height: 1.75em
+    margin-bottom: 1.5em
+
+.guaranteeSmallText
+    color: darken($lightGrey, 10%)
+    font-size: .9rem
