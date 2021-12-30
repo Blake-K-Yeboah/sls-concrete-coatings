@@ -1,11 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 // Page Components
 import Title from "../../components/Common/Title";
 import AboutTheProduct from "../../components/OurProducts/AboutTheProduct";
 import CenteredTextSection from "../../components/OurProducts/CenteredTextSection";
+import CommonApplications from "../../components/OurProducts/CommonApplications";
 
 // Styling
 import styles from "../../styles/SprayPaving.module.sass";
@@ -105,6 +107,15 @@ const SprayPaving: NextPage = () => {
                     other stains.
                 </li>
             </ul>
+            <div className={styles.btnGroup}>
+                <Link href="/colour-chart">
+                    <a className="btn primary">View Colour Chart</a>
+                </Link>
+                <Link href="/gallery">
+                    <a className="btn light-outline">View Photo Gallery</a>
+                </Link>
+            </div>
+            <CommonApplications />
         </>
     );
 };
