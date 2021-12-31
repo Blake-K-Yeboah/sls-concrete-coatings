@@ -11,7 +11,10 @@ const SprayPavingColours: FC = () => {
         <div className={styles.colourGrid}>
             {sprayPavingColours.map((color) => {
                 return (
-                    <div className={styles.colourBoxContainer}>
+                    <div
+                        className={styles.colourBoxContainer}
+                        key={color.color}
+                    >
                         <div
                             className={styles.colourBox}
                             style={{ backgroundColor: color.color }}
