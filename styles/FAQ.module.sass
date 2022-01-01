@@ -1,0 +1,30 @@
+@import "_partials/variables"
+
+.mainContent
+    padding: 20vh 12.5vw
+
+.question
+    width: 75%
+
+.questionTitle
+    color: $lightGrey
+    font-size: 1.5rem
+    font-weight: 300
+    text-transform: capitalize
+    letter-spacing: .125em
+    margin: 1em 0
+    background: rgba(255,255,255, .06)
+    padding: 1em
+    border: 1px solid darken($lightGrey, 15%)
+    cursor: pointer
+    transition: background .3s ease-in-out
+
+    &:hover
+        background: rgba(255,255,255, .1)
+
+.questionAnswer
+    color: $lightGrey
+    font-size: 1.1rem
+    line-height: 1.75
+    letter-spacing: .125em
+    font-weight: 300
