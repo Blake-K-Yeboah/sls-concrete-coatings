@@ -17,8 +17,8 @@ const LinkBoxSection: FC = () => {
             imgId: "2",
         },
         {
-            text: "View Photo Gallery",
-            href: "/gallery",
+            text: "Frequently Asked Questions",
+            href: "/faq",
             imgId: "3",
         },
     ];
