@@ -29,8 +29,7 @@ const Header: FC = () => {
                         Who We Are
                     </button>
                     <button
-                        className="btn light-outline"
-                        style={{ marginLeft: "2em" }}
+                        className={`btn light-outline ${styles.secondBtn}`}
                         onClick={() => router.push("/contact-us")}
                     >
                         Free Quote
