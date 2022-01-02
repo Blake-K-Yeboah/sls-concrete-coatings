@@ -46,4 +46,77 @@
     margin-left: 2em
 
 .activeLink
-    color: $primary
+    color: $primary !important
+
+.mobileNav
+    width: 100vw
+    height: 100vh
+    background: rgba(0,0,0,0.95)
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 30
+    display: none
+    justify-content: center
+    align-items: center
+
+    ul
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        li
+            margin-bottom: 2em
+
+            a
+                text-decoration: none
+                color: $lightGrey
+                text-transform: uppercase
+                font-weight: 300
+                letter-spacing: .125em
+
+.menuIcon
+    color: $lightGrey
+    font-size: 1.75rem
+    display: none
+
+.closeIcon
+    color: $lightGrey
+    font-size: 1.75rem
+    position: absolute
+    right: 10vw
+    top: 10vw
+
+    &:hover
+        color: #ff4444
+
+@media screen and (max-width:1572px)
+    .navbar
+        padding: 0 8.5vw
+
+    .link
+        font-size: .9rem
+
+@media screen and (max-width: 1282px)
+    .brand
+        h2
+            font-size: 1.25rem
+
+        img
+            width: 60px !important
+            height: 60px !important
+
+    .linkWithMargin
+        margin-left: 1.5em
+
+@media screen and (max-width: 1142px)
+    .linkList
+        display: none
+
+    .menuIcon
+        display: block
+
+@media screen and (max-width: 502px)
+    .brand
+        h2
+            display: none
