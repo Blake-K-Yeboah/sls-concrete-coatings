@@ -4,7 +4,7 @@
     display: grid
     grid-template-columns: repeat(3, 1fr)
     padding: 0 12.5vw
-    height: 25vh
+    min-height: 25vh
     column-gap: 2vw
     margin-bottom: 15vh
 
@@ -19,13 +19,13 @@
     transition: opacity .3s ease-in-out
 
     &.id-1
-        background: url("/images/boxes/1.png") no-repeat
+        background: url("/images/boxes/1.png") center/cover no-repeat
 
     &.id-2
-        background: url("/images/boxes/2.png") no-repeat
+        background: url("/images/boxes/2.png") center/cover no-repeat
 
     &.id-3
-        background: url("/images/boxes/3.png") no-repeat
+        background: url("/images/boxes/3.png") center/cover no-repeat
 
 .iconCircle
     background-color: rgba(255,255,255,.14)
@@ -54,3 +54,28 @@
 
 .linkBox:hover
     opacity: .8
+
+@media screen and (max-width: 1572px)
+    .linkBoxGrid
+        padding: 0 8.5vw
+
+@media screen and (max-width: 1184px)
+    .text
+        font-size: 1.15rem
+        width: 75%
+        text-align: center
+        line-height: 1.75em
+
+@media screen and (max-width: 998px)
+    .linkBoxGrid
+        grid-template-columns: 1fr
+        row-gap: 2em
+
+    .linkBox
+        width: 50%
+        padding: 3em 0
+        margin: 0 auto
+
+@media screen and (max-width: 724px)
+    .linkBox
+        width: 100%
