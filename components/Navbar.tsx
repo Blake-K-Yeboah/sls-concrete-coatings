@@ -8,7 +8,7 @@ import styles from "../styles/Navbar.module.sass";
 
 // Icons
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaTimes } from "react-icons/fa";
+import { IoIosClose } from "react-icons/io";
 
 // GSAP
 import gsap from "gsap";
@@ -101,7 +101,7 @@ const Navbar: FC = () => {
                 />
             </nav>
             <div className={styles.mobileNav} id="mobile-nav">
-                <FaTimes
+                <IoIosClose
                     className={styles.closeIcon}
                     onClick={toggleMobileMenu}
                 />
