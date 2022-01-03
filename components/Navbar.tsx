@@ -115,6 +115,7 @@ const Navbar: FC = () => {
                                             ? styles.activeLink
                                             : ""
                                     }
+                                    onClick={toggleMobileMenu}
                                 >
                                     {link.text as string}
                                 </a>
