@@ -100,7 +100,7 @@ export const sprayPavingColours = [
     },
     {
         name: "silver grey",
-        color: "#696A6C",
+        color: "#696A5C",
     },
     {
         name: "charcoal",
