@@ -24,7 +24,12 @@ const LinkBoxSection: FC = () => {
     ];
 
     return (
-        <section className={styles.linkBoxGrid}>
+        <section
+            className={styles.linkBoxGrid}
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos="fade-left"
+        >
             {linkBoxes.map((link) => (
                 <LinkBox link={link} key={link.imgId} />
             ))}
