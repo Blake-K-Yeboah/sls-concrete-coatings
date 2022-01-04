@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { NextRouter, useRouter } from "next/router";
@@ -14,6 +14,17 @@ import { IoIosClose } from "react-icons/io";
 import gsap from "gsap";
 
 const Navbar: FC = () => {
+    // Load In Animation
+    useEffect(() => {
+        let tl = gsap.timeline({ defaults: { duration: 1 } });
+
+        tl.from("#navbar-brand", { opacity: 0, y: -100 }).from(
+            "#nav-item",
+            { opacity: 0, x: -30, stagger: 0.25 },
+            "-=1"
+        );
+    }, []);
+
     const router: NextRouter = useRouter();
 
     const [mobileMenuShow, setMobileMenuShow] = useState(false);
@@ -64,7 +75,7 @@ const Navbar: FC = () => {
         <>
             <nav className={styles.navbar}>
                 <Link href="/">
-                    <a className={styles.brand}>
+                    <a className={styles.brand} id="navbar-brand">
                         <Image
                             src="/images/Smaller Logo.jpg"
                             alt="Logo"
@@ -76,7 +87,7 @@ const Navbar: FC = () => {
                 </Link>
                 <ul className={styles.linkList}>
                     {links.map((link) => (
-                        <li key={link.href}>
+                        <li key={link.href} id="nav-item">
                             <Link href={link.href}>
                                 <a
                                     className={`${styles.link} ${

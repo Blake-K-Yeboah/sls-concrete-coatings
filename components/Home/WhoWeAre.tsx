@@ -7,7 +7,12 @@ import Image from "next/image";
 
 const WhoWeAre: FC = () => {
     return (
-        <section className={styles.whoWeAreSection} id="whoWeAre">
+        <section
+            className={styles.whoWeAreSection}
+            id="whoWeAre"
+            data-aos-duration="1250"
+            data-aos="fade-right"
+        >
             <Title type="left" text="Who We Are" />
 
             <div className={styles.sectionGrid}>
