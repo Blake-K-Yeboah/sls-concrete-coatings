@@ -12,6 +12,7 @@
     font-weight: 300
     text-transform: capitalize
     letter-spacing: .125em
+    line-height: 1.75em
     margin: 1em 0
     background: rgba(255,255,255, .06)
     padding: 1em
@@ -28,3 +29,20 @@
     line-height: 1.75
     letter-spacing: .125em
     font-weight: 300
+
+@media screen and (max-width: 1572px)
+    .mainContent
+        padding: 20vh 8.5vw
+
+@media screen and (max-width: 1142px)
+    .question
+        width: 100%
+
+@media screen and (max-width: 1070px)
+    .question:first-of-type
+        margin-top: 4.5em
+
+@media screen and (max-width: 512px)
+    .mainContent > h2
+        font-size: 2rem
+        width: 100%

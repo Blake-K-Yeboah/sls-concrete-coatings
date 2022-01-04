@@ -5,8 +5,8 @@
 
 .grid
     display: grid
-    grid-template-columns: repeat(7, 1fr)
-    column-gap: 2em
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr))
+    gap: 4em 2em
 
 .linkContainer
     background-color: rgba(255,255,255,.08)
@@ -50,3 +50,7 @@
     display: flex
     align-items: center
     flex-direction: column
+
+@media screen and (max-width: 1070px)
+    .grid
+        margin-top: 4.5em
