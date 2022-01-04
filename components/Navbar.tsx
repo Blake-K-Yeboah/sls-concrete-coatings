@@ -14,6 +14,8 @@ import { IoIosClose } from "react-icons/io";
 import gsap from "gsap";
 
 const Navbar: FC = () => {
+    const router: NextRouter = useRouter();
+
     // Load In Animation
     useEffect(() => {
         let tl = gsap.timeline({ defaults: { duration: 1 } });
@@ -23,9 +25,7 @@ const Navbar: FC = () => {
             { opacity: 0, x: -30, stagger: 0.25 },
             "-=1"
         );
-    }, []);
-
-    const router: NextRouter = useRouter();
+    }, [router.asPath]);
 
     const [mobileMenuShow, setMobileMenuShow] = useState(false);
 

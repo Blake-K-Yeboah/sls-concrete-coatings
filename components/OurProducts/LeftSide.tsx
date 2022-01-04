@@ -1,13 +1,23 @@
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 
 import styles from "../../styles/OurProducts.module.sass";
 
 import Title from "../Common/Title";
 
+import gsap from "gsap";
+
 const LeftSide: FC = () => {
+    useEffect(() => {
+        gsap.from("#leftSide *", {
+            opacity: 0,
+            x: -60,
+            duration: 1.5,
+        });
+    }, []);
+
     return (
-        <div className={styles.leftSide}>
+        <div className={styles.leftSide} id="leftSide">
             <Title type="left" text="Spray Paving" />
             <p className={styles.paragraph}>
                 Our product is a specially formulated coating system that

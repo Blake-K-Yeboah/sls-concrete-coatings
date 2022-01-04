@@ -35,12 +35,14 @@ const SprayPavingOverview: FC = () => {
             >
                 <Image src="/images/Application Process.png" layout="fill" />
             </div>
-            <button
-                className={`btn primary ${styles.learnMoreBtn}`}
-                onClick={btnClickHandler}
-            >
-                Learn More
-            </button>
+            <div data-aos-duration="1000" data-aos="fade-up">
+                <button
+                    className={`btn primary ${styles.learnMoreBtn}`}
+                    onClick={btnClickHandler}
+                >
+                    Learn More
+                </button>
+            </div>
         </section>
     );
 };
