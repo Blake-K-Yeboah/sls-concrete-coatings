@@ -6,6 +6,7 @@
     grid-template-columns: 7fr 5fr
     column-gap: 2em
     height: 90vh
+    min-height: 875px
     margin-bottom: 10vh
 
 .contactFormContainer
@@ -85,3 +86,54 @@
 .textarea
     height: 80px
     padding-top: 1em
+
+@media screen and (max-width: 1572px)
+    .mainContentGrid
+        padding: 20vh 8.5vw 0 8.5vw
+
+@media screen and (max-width: 1172px)
+    .mainContentGrid
+        grid-template-columns: 1fr 1fr
+
+@media screen and (max-width: 1070px)
+    .mainContentGrid
+        grid-template-columns: 1fr
+        column-gap: none
+        height: 165vh
+        text-align: center
+        min-height: 1400px
+
+    .contactFormContainer
+        width: 50%
+        margin: 0 auto
+
+    .regularText
+        margin: 0 auto
+        text-align: center
+
+    .divider
+        margin-left: 6.25%
+
+@media screen and (max-width: 898px)
+    .contactFormContainer
+        width: 75%
+
+@media screen and (max-width: 630px)
+    .contactFormContainer
+        width: 83vw
+
+    .contactForm
+        width: 80%
+
+    .contactInfo
+        width: 75%
+        margin: 2em auto
+        word-wrap: break-word
+        line-height: 1.75em
+
+    .mainContentGrid
+        height: 190vh
+        min-height: 1760px
+
+    .content
+        width: 83vw
