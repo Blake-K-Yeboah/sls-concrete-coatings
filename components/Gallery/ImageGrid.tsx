@@ -22,6 +22,7 @@ const ImageGrid: FC<IProps> = (props) => {
                         <div
                             className={styles.imgContainer}
                             onClick={() => setActiveImg(imgSrc)}
+                            key={imgSrc}
                         >
                             <Image
                                 src={imgSrc}
