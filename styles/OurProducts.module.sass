@@ -7,10 +7,10 @@
     padding: 15vh 0 0 0
 
 .leftSide
-    background-image: url("/images/backgrounds/left-side-bg.jpg")
+    background: url("/images/backgrounds/left-side-bg.jpg") center/cover no-repeat
 
 .rightSide
-    background-image: url("/images/backgrounds/right-side-bg.jpg")
+    background: url("/images/backgrounds/right-side-bg.jpg") center/cover no-repeat
 
 .leftSide, .rightSide
     background-position: center
@@ -124,3 +124,34 @@
 .guaranteeSmallText
     color: darken($lightGrey, 10%)
     font-size: .9rem
+
+@media screen and (max-width: 1143px)
+    .leftSide, .rightSide
+        opacity: 1
+
+    .paragraph
+        font-size: 1.375rem
+
+@media screen and (max-width: 1070px)
+    .leftSide, .rightSide
+        padding: 10vh 0
+
+        &> div:first-of-type
+            left: 0
+            transform: none
+
+    .grid
+        grid-template-columns: 1fr
+        height: fit-content
+
+@media screen and (max-width: 572px)
+    .leftSide, .rightSide
+
+        &> div:last-of-type
+            display: flex
+            flex-direction: column
+            margin: 1em 0 0 0
+
+    .firstBtn
+        margin-right: 0px
+        margin-bottom: 2em
