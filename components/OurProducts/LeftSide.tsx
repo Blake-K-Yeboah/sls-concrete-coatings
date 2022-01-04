@@ -21,7 +21,9 @@ const LeftSide: FC = () => {
                     </a>
                 </Link>
                 <Link href="/gallery">
-                    <a className="btn light-outline">View Photo Gallery</a>
+                    <a className={`btn light-outline ${styles.secondBtn}`}>
+                        View Photo Gallery
+                    </a>
                 </Link>
             </div>
         </div>
