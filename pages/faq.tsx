@@ -20,11 +20,16 @@ const FAQ: NextPage = () => {
                 <meta charSet="utf-8" />
             </Head>
             <main className={styles.mainContent}>
-                <Title type="left" text="Frequently Asked Questions" />
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <Title type="left" text="Frequently Asked Questions" />
+                </div>
                 {questionsAndAnswers.map((q) => {
                     return (
                         <details className={styles.question} key={q.question}>
-                            <summary className={styles.questionTitle}>
+                            <summary
+                                className={styles.questionTitle}
+                                data-aos="zoom-out-down"
+                            >
                                 {q.question}
                             </summary>
                             <p

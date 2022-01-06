@@ -17,14 +17,24 @@ const Sitemap: NextPage = () => {
                 <meta charSet="utf-8" />
             </Head>
             <main className={styles.mainContent}>
-                <Title type="left" text="sitemap" />
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <Title type="left" text="sitemap" />
+                </div>
                 <div className={styles.grid}>
-                    <div className={styles.column}>
+                    <div
+                        className={styles.column}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
                         <Link href="/">
                             <a className={styles.linkContainer}>Home</a>
                         </Link>
                     </div>
-                    <div className={styles.column}>
+                    <div
+                        className={styles.column}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
                         <Link href="/our-products">
                             <a className={styles.linkContainer}>Our Products</a>
                         </Link>
@@ -41,27 +51,47 @@ const Sitemap: NextPage = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className={styles.column}>
+                    <div
+                        className={styles.column}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
                         <Link href="/gallery">
                             <a className={styles.linkContainer}>Gallery</a>
                         </Link>
                     </div>
-                    <div className={styles.column}>
+                    <div
+                        className={styles.column}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
                         <Link href="/colour-chart">
                             <a className={styles.linkContainer}>Colour Chart</a>
                         </Link>
                     </div>
-                    <div className={styles.column}>
+                    <div
+                        className={styles.column}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
                         <Link href="/contact-us">
                             <a className={styles.linkContainer}>Contact Us</a>
                         </Link>
                     </div>
-                    <div className={styles.column}>
+                    <div
+                        className={styles.column}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
                         <Link href="/sitemap">
                             <a className={styles.linkContainer}>Sitemap</a>
                         </Link>
                     </div>
-                    <div className={styles.column}>
+                    <div
+                        className={styles.column}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                    >
                         <Link href="/faq">
                             <a className={styles.linkContainer}>FAQ</a>
                         </Link>
