@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import React from "react";
+import { useEffect } from "react";
 
 // Page Components
 import Title from "../components/Common/Title";
@@ -9,7 +9,15 @@ import ContactForm from "../components/ContactUs/ContactForm";
 // Styling
 import styles from "../styles/ContactUs.module.sass";
 
+// GSAP
+import gsap from "gsap";
+
 const ContactUs: NextPage = () => {
+    useEffect(() => {
+        gsap.from("#content", { opacity: 0, x: -50, duration: 1 });
+        gsap.from("#formContainer", { opacity: 0, x: 50, duration: 1 });
+    }, []);
+
     return (
         <>
             <Head>
@@ -17,7 +25,7 @@ const ContactUs: NextPage = () => {
                 <meta charSet="utf-8" />
             </Head>
             <main className={styles.mainContentGrid}>
-                <div className={styles.content}>
+                <div className={styles.content} id="content">
                     <Title type="left" text="Contact Us" />
                     <p className={styles.regularText}>
                         If you would like any further information about anything
@@ -38,7 +46,7 @@ const ContactUs: NextPage = () => {
                         info@southbrisbaneconcreteresurfacing.com.au
                     </p>
                 </div>
-                <div className={styles.contactFormContainer}>
+                <div className={styles.contactFormContainer} id="formContainer">
                     <h4 className={styles.contactFormTitle}>Contact Form</h4>
                     <ContactForm />
                 </div>

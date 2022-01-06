@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Page Components
 import Title from "../components/Common/Title";
@@ -10,7 +10,25 @@ import EpoxyColours from "../components/ColourChart/EpoxyColours";
 // Styling
 import styles from "../styles/ColourChart.module.sass";
 
+// GSAP
+import gsap from "gsap";
+
 const ColourChart: NextPage = () => {
+    useEffect(() => {
+        gsap.from("#titleContainer", {
+            opacity: 0,
+            x: -50,
+            y: -50,
+            duration: 1,
+        });
+        gsap.from("#selectionText", {
+            opacity: 0,
+            x: -30,
+            y: -30,
+            duration: 1,
+        });
+    }, []);
+
     const [galleryType, setGalleryType] = useState<string>("spray-paving");
 
     const selectChangeHandler = (e: React.ChangeEvent<HTMLSelectElement>) =>
@@ -23,8 +41,10 @@ const ColourChart: NextPage = () => {
                 <meta charSet="utf-8" />
             </Head>
             <main className={styles.mainContent}>
-                <Title type="left" text="Colour Chart" />
-                <p className={styles.selectionText}>
+                <div id="titleContainer">
+                    <Title type="left" text="Colour Chart" />
+                </div>
+                <p className={styles.selectionText} id="selectionText">
                     See Colours For
                     <select
                         value={galleryType}
@@ -38,7 +58,11 @@ const ColourChart: NextPage = () => {
                 {galleryType === "spray-paving" ? (
                     <>
                         <SprayPavingColours />
-                        <p className={styles.smallText}>
+                        <p
+                            className={styles.smallText}
+                            data-aos="zoom-out-down"
+                            data-aos-duration="1000"
+                        >
                             Liquid Oxide Additive is a colouring agent for
                             cement products. Versatility is the key success to
                             this quality product. With 30 different colours
@@ -50,7 +74,11 @@ const ColourChart: NextPage = () => {
                 ) : (
                     <>
                         <EpoxyColours />
-                        <p className={styles.smallText}>
+                        <p
+                            className={styles.smallText}
+                            data-aos="zoom-out-down"
+                            data-aos-duration="1000"
+                        >
                             *While all possible care has been taken to reproduce
                             these colours, South Brisbane Concrete Resurfacing
                             cannot be held responsible for colour variations of

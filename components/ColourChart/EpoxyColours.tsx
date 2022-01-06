@@ -5,21 +5,28 @@ import Image from "next/image";
 import styles from "../../styles/ColourChart.module.sass";
 
 // Data
-import { sprayPavingColours, epoxyFloorsRanges } from "../../data";
+import { epoxyFloorsRanges } from "../../data";
 import SprayPavingColours from "./SprayPavingColours";
 
 const EpoxyColours: FC = () => {
     return (
         <div className={styles.epoxyColours}>
             <details>
-                <summary className={styles.rangeHeading}>
+                <summary
+                    className={styles.rangeHeading}
+                    data-aos="flip-down"
+                    data-aos-duration="1000"
+                >
                     Creative Flake Standard Colour Range
                 </summary>
 
                 <div className={styles.imgRange}>
                     {epoxyFloorsRanges.standard.map((floor) => {
                         return (
-                            <div className={styles.floorBoxContainer}>
+                            <div
+                                className={styles.floorBoxContainer}
+                                key={floor.name}
+                            >
                                 <div className={styles.floorBoxImgContainer}>
                                     <Image
                                         src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
@@ -35,14 +42,21 @@ const EpoxyColours: FC = () => {
                 </div>
             </details>
             <details>
-                <summary className={styles.rangeHeading}>
+                <summary
+                    className={styles.rangeHeading}
+                    data-aos="flip-down"
+                    data-aos-duration="1000"
+                >
                     Creative Flake Stone Look Range
                 </summary>
 
                 <div className={styles.imgRange}>
                     {epoxyFloorsRanges.stoneLook.map((floor) => {
                         return (
-                            <div className={styles.floorBoxContainer}>
+                            <div
+                                className={styles.floorBoxContainer}
+                                key={floor.name}
+                            >
                                 <div className={styles.floorBoxImgContainer}>
                                     <Image
                                         src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
@@ -58,14 +72,21 @@ const EpoxyColours: FC = () => {
                 </div>
             </details>
             <details>
-                <summary className={styles.rangeHeading}>
+                <summary
+                    className={styles.rangeHeading}
+                    data-aos="flip-down"
+                    data-aos-duration="1000"
+                >
                     Creative Flake Designer Colour Range
                 </summary>
 
                 <div className={styles.imgRange}>
                     {epoxyFloorsRanges.designer.map((floor) => {
                         return (
-                            <div className={styles.floorBoxContainer}>
+                            <div
+                                className={styles.floorBoxContainer}
+                                key={floor.name}
+                            >
                                 <div className={styles.floorBoxImgContainer}>
                                     <Image
                                         src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
@@ -81,7 +102,11 @@ const EpoxyColours: FC = () => {
                 </div>
             </details>
             <details>
-                <summary className={styles.rangeHeading}>
+                <summary
+                    className={styles.rangeHeading}
+                    data-aos="flip-down"
+                    data-aos-duration="1000"
+                >
                     Ultra Epoxy Industrial Flooring Colour Range
                 </summary>
                 <SprayPavingColours />

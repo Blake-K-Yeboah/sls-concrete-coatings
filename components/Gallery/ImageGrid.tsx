@@ -23,6 +23,8 @@ const ImageGrid: FC<IProps> = (props) => {
                             className={styles.imgContainer}
                             onClick={() => setActiveImg(imgSrc)}
                             key={imgSrc}
+                            data-aos="zoom-in"
+                            data-aos-duration="1000"
                         >
                             <Image
                                 src={imgSrc}

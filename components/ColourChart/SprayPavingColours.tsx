@@ -14,6 +14,8 @@ const SprayPavingColours: FC = () => {
                     <div
                         className={styles.colourBoxContainer}
                         key={color.color}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
                     >
                         <div
                             className={styles.colourBox}
