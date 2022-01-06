@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 // Page Components
 import Title from "../../components/Common/Title";
@@ -11,7 +12,23 @@ import CenteredTextSection from "../../components/OurProducts/CenteredTextSectio
 // Styling
 import styles from "../../styles/SprayPaving.module.sass";
 
+// GSAP
+import gsap from "gsap";
+
 const epoxyFloors: NextPage = () => {
+    useEffect(() => {
+        gsap.from("#epoxyFloorsHeaderContent", {
+            opacity: 0,
+            x: -50,
+            duration: 1.25,
+        });
+        gsap.from("#hexagonImg", {
+            opacity: 0,
+            x: 50,
+            duration: 1.25,
+        });
+    }, []);
+
     return (
         <>
             <Head>
@@ -19,7 +36,7 @@ const epoxyFloors: NextPage = () => {
                 <meta charSet="utf-8" />
             </Head>
             <section className={styles.grid}>
-                <div className={styles.content}>
+                <div className={styles.content} id="epoxyFloorsHeaderContent">
                     <Title type="left" text="Epoxy Seamless Floors" />
                     <p className={styles.text}>
                         In 2008 our advanced range of Creative Flake products
@@ -37,7 +54,7 @@ const epoxyFloors: NextPage = () => {
                     </p>
                 </div>
                 <div className={styles.imgGridContainer}>
-                    <div className={styles.imgContainer}>
+                    <div className={styles.imgContainer} id="hexagonImg">
                         <Image
                             src="/images/Epoxy Flooring Hexagon Images.png"
                             layout="fill"
@@ -54,7 +71,12 @@ const epoxyFloors: NextPage = () => {
                 title="additionally"
                 text="We are also able to tint the base coat in one of 30 stunning colours to produce various finishes. Creative Flake flooring is a modern alternative to tiles and in additon a non-slip additive can be applied in situations where required such as ramps and wet areas."
             />
-            <div className={styles.lessMarginBtnGroup}>
+            <div
+                className={styles.lessMarginBtnGroup}
+                data-aos="zoom-out-down"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+            >
                 <Link href="/colour-chart">
                     <a className="btn primary">View Colour Chart</a>
                 </Link>

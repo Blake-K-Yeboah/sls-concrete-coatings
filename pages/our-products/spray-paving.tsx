@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -12,7 +13,23 @@ import CommonApplications from "../../components/OurProducts/CommonApplications"
 // Styling
 import styles from "../../styles/SprayPaving.module.sass";
 
+// GSAP
+import gsap from "gsap";
+
 const SprayPaving: NextPage = () => {
+    useEffect(() => {
+        gsap.from("#sprayPavingHeaderContent", {
+            opacity: 0,
+            x: -50,
+            duration: 1.25,
+        });
+        gsap.from("#hexagonImg", {
+            opacity: 0,
+            x: 50,
+            duration: 1.25,
+        });
+    }, []);
+
     return (
         <>
             <Head>
@@ -20,7 +37,7 @@ const SprayPaving: NextPage = () => {
                 <meta charSet="utf-8" />
             </Head>
             <section className={styles.grid}>
-                <div className={styles.content}>
+                <div className={styles.content} id="sprayPavingHeaderContent">
                     <Title type="left" text="Spray Paving" />
                     <p className={styles.text}>
                         The spray paving industry was introduced in Australia
@@ -39,7 +56,7 @@ const SprayPaving: NextPage = () => {
                     </p>
                 </div>
                 <div className={styles.imgGridContainer}>
-                    <div className={styles.imgContainer}>
+                    <div className={styles.imgContainer} id="hexagonImg">
                         <Image
                             src="/images/Home Hexegon Images.png"
                             layout="fill"
@@ -60,11 +77,27 @@ const SprayPaving: NextPage = () => {
                 title="easy to clean"
                 text="The spray pave coating system is protected by the application of a clear sealer, which is petrol and solvent resistant. Oil and stains simply wash away leaving your concrete looking like new. It is recommended to re-seal the decorative concrete once a year to enhance and refresh the overall finish."
             />
-            <Title type="center" text="Spray Pave Application" />
-            <div className={styles.applicationImgContainer}>
+            <div
+                data-aos="zoom-out-down"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+            >
+                <Title type="center" text="Spray Pave Application" />
+            </div>
+            <div
+                className={styles.applicationImgContainer}
+                data-aos="zoom-out-down"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+            >
                 <Image src="/images/Application Process.png" layout="fill" />
             </div>
-            <ul className={styles.applicationSteps}>
+            <ul
+                className={styles.applicationSteps}
+                data-aos="zoom-out-down"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+            >
                 <li>
                     <span className={styles.stepNum}>1. </span> The concrete
                     area is acid etched using a mixture of hydrochloric acid and
@@ -107,7 +140,12 @@ const SprayPaving: NextPage = () => {
                     other stains.
                 </li>
             </ul>
-            <div className={styles.btnGroup}>
+            <div
+                className={styles.btnGroup}
+                data-aos="zoom-out-down"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+            >
                 <Link href="/colour-chart">
                     <a className="btn primary">View Colour Chart</a>
                 </Link>

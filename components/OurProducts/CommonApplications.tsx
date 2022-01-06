@@ -15,15 +15,32 @@ import { AiFillStar } from "react-icons/ai";
 const CommonApplications: FC = () => {
     return (
         <div className={styles.commonApplications}>
-            <Title type="center" text="Common Applications" />
+            <div
+                data-aos="zoom-out-down"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+            >
+                <Title type="center" text="Common Applications" />
+            </div>
             <div className={styles.applicationList}>
                 {applications.map((application) => (
-                    <div className={styles.application} key={application}>
+                    <div
+                        className={styles.application}
+                        key={application}
+                        data-aos="zoom-in"
+                        data-aos-duration="1000"
+                        data-aos-offset="200"
+                    >
                         <span>{application as string}</span>
                     </div>
                 ))}
             </div>
-            <div className={styles.guaranteeSection}>
+            <div
+                className={styles.guaranteeSection}
+                data-aos="flip-up"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+            >
                 <h4 className={styles.guaranteeHeading}>
                     <AiFillStar className={styles.star} />
                     “5 Year Written Guarantee”
