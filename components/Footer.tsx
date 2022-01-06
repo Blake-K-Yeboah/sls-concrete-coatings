@@ -46,11 +46,7 @@ const Footer: FC = () => {
     ];
 
     return (
-        <footer
-            className={styles.footer}
-            data-aos="fade-up"
-            data-aos-duration="1000"
-        >
+        <footer className={styles.footer}>
             <div className={styles.upper}>
                 <div className={styles.imgContainer}>
                     <Image src="/images/Logo.jpg" layout="fill" />
