@@ -33,9 +33,9 @@ function MyApp({ Component, pageProps }: AppProps) {
                 titleTemplate="SLS Concrete Coatings"
                 defaultTitle="SLS Concrete Coatings"
                 description="SLS Concrete Coatings specialises in the application of Decorative Seamless Flooring and Spray Paving products. Our range of products are specially formulated coating systems that adhere permanently to the prepared surface. Please visit the About Our Products page to learn more."
-                canonical="https://www.slsconcretecoatings.com/"
+                canonical="https://www.slsconcretecoatings.com.au/"
                 openGraph={{
-                    url: "https://www.slsconcretecoatings.com/",
+                    url: "https://www.slsconcretecoatings.com.au/",
                     title: "SLS Concrete Coatings",
                     description:
                         "SLS Concrete Coatings specialises in the application of Decorative Seamless Flooring and Spray Paving products. Our range of products are specially formulated coating systems that adhere permanently to the prepared surface. Please visit the About Our Products page to learn more.",
