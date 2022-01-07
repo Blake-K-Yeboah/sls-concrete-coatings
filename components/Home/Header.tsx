@@ -44,7 +44,11 @@ const Header: FC = () => {
                 </div>
             </div>
             <div className={styles.imgContainer} id="header-img">
-                <Image src="/images/Home Hexegon Images.png" layout="fill" />
+                <Image
+                    src="/images/Home Hexegon Images.png"
+                    layout="fill"
+                    alt=""
+                />
             </div>
         </header>
     );

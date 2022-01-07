@@ -1,8 +1,8 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import { NextPage } from "next";
 
 // Page Components
 import Title from "../../components/Common/Title";
@@ -15,7 +15,7 @@ import styles from "../../styles/SprayPaving.module.sass";
 // GSAP
 import gsap from "gsap";
 
-const epoxyFloors: NextPage = () => {
+const EpoxyFloors: NextPage = () => {
     useEffect(() => {
         gsap.from("#epoxyFloorsHeaderContent", {
             opacity: 0,
@@ -58,6 +58,7 @@ const epoxyFloors: NextPage = () => {
                         <Image
                             src="/images/Epoxy Flooring Hexagon Images.png"
                             layout="fill"
+                            alt="Epoxy Floors examples"
                         />
                     </div>
                 </div>
@@ -88,4 +89,4 @@ const epoxyFloors: NextPage = () => {
     );
 };
 
-export default epoxyFloors;
+export default EpoxyFloors;

@@ -49,7 +49,11 @@ const Footer: FC = () => {
         <footer className={styles.footer}>
             <div className={styles.upper}>
                 <div className={styles.imgContainer}>
-                    <Image src="/images/Logo.jpg" layout="fill" />
+                    <Image
+                        src="/images/Logo.jpg"
+                        layout="fill"
+                        alt="SLS Logo"
+                    />
                 </div>
                 <div className={styles.linksListSection}>
                     <p className={styles.linkGroup}>

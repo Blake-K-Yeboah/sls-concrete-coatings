@@ -31,6 +31,7 @@ const ImageGrid: FC<IProps> = (props) => {
                                 layout="fill"
                                 objectFit="cover"
                                 objectPosition="50% 50%"
+                                alt="Example of completed work"
                             />
                         </div>
                     );
@@ -39,7 +40,11 @@ const ImageGrid: FC<IProps> = (props) => {
             {activeImg ? (
                 <>
                     <div className={styles.activeImgContainer}>
-                        <Image src={activeImg} layout="fill" />
+                        <Image
+                            src={activeImg}
+                            layout="fill"
+                            alt="Larger example of completed work"
+                        />
                     </div>
                     <div
                         className={styles.overlay}

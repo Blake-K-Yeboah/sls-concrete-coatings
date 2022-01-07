@@ -33,7 +33,11 @@ const SprayPavingOverview: FC = () => {
                 data-aos="zoom-in"
                 data-aos-offset="200"
             >
-                <Image src="/images/Application Process.png" layout="fill" />
+                <Image
+                    src="/images/Application Process.png"
+                    layout="fill"
+                    alt="Spray paving application process"
+                />
             </div>
             <div data-aos-duration="1000" data-aos="fade-up">
                 <button

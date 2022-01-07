@@ -26,14 +26,18 @@ const WhoWeAre: FC = () => {
                         <br />
                         <br />
                         SLS Concrete Coatings is a family owned and operated
-                        business that is located on Brisbane's Southside in
+                        business that is located on Brisbane&apos;s Southside in
                         Queensland, also servicing the surrounding areas. We
                         deliver a high standard of quality and service to each
                         and every customer.
                     </p>
                 </div>
                 <div className={styles.imgContainer}>
-                    <Image src="/images/Logo.jpg" layout="fill" />
+                    <Image
+                        src="/images/Logo.jpg"
+                        layout="fill"
+                        alt="SLS Logo"
+                    />
                 </div>
             </div>
         </section>

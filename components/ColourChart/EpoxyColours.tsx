@@ -31,6 +31,7 @@ const EpoxyColours: FC = () => {
                                     <Image
                                         src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
                                         layout="fill"
+                                        alt="Epoxy Floor"
                                     />
                                 </div>
                                 <p className={styles.floorBoxTitle}>
@@ -61,6 +62,7 @@ const EpoxyColours: FC = () => {
                                     <Image
                                         src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
                                         layout="fill"
+                                        alt="Epoxy Floor"
                                     />
                                 </div>
                                 <p className={styles.floorBoxTitle}>
@@ -91,6 +93,7 @@ const EpoxyColours: FC = () => {
                                     <Image
                                         src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
                                         layout="fill"
+                                        alt="Epoxy Floor"
                                     />
                                 </div>
                                 <p className={styles.floorBoxTitle}>

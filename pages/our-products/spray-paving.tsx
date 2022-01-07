@@ -60,6 +60,7 @@ const SprayPaving: NextPage = () => {
                         <Image
                             src="/images/Home Hexegon Images.png"
                             layout="fill"
+                            alt="Spray Paving Examples"
                         />
                     </div>
                 </div>
@@ -90,7 +91,11 @@ const SprayPaving: NextPage = () => {
                 data-aos-duration="1000"
                 data-aos-offset="200"
             >
-                <Image src="/images/Application Process.png" layout="fill" />
+                <Image
+                    src="/images/Application Process.png"
+                    layout="fill"
+                    alt="Application Process Diagram"
+                />
             </div>
             <ul
                 className={styles.applicationSteps}
