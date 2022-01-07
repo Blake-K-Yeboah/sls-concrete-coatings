@@ -110,6 +110,7 @@
     display: flex
     align-items: center
     margin: 0 0 .75em 0
+    text-align: center
 
 .guaranteeParagraph
     color: $lightGrey
@@ -124,6 +125,7 @@
 .guaranteeSmallText
     color: darken($lightGrey, 10%)
     font-size: .9rem
+    text-align: center
 
 @media screen and (max-width: 1143px)
     .leftSide, .rightSide
@@ -131,6 +133,12 @@
 
     .paragraph
         font-size: 1.375rem
+
+    .applicationList, .guaranteeSection
+        width: 100%
+
+    .commonApplications
+        padding: 10vh 8.5vw
 
 @media screen and (max-width: 1070px)
     .leftSide, .rightSide
@@ -144,6 +152,10 @@
         grid-template-columns: 1fr
         height: fit-content
 
+@media screen and (max-width: 824px)
+    .applicationList
+        grid-template-columns: 1fr 1fr
+
 @media screen and (max-width: 572px)
     .leftSide, .rightSide
 
@@ -155,3 +167,16 @@
     .firstBtn
         margin-right: 0px
         margin-bottom: 2em
+
+    .aboutTheProduct
+        h1
+            text-align: center
+
+    .applicationList
+        grid-template-columns: 1fr
+
+    .guaranteeParagraph
+        margin: 1.5em 0 2.5em 0
+
+    .star
+        display: none

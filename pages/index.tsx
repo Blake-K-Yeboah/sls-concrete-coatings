@@ -14,10 +14,6 @@ const Home: NextPage = () => {
             <Head>
                 <title>SLS Concrete Coatings - Home</title>
                 <meta charSet="utf-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
             </Head>
             <Header />
             <WhoWeAre />

@@ -82,6 +82,7 @@ const SprayPaving: NextPage = () => {
                 data-aos="zoom-out-down"
                 data-aos-duration="1000"
                 data-aos-offset="200"
+                className={styles.largeTitle}
             >
                 <Title type="center" text="Spray Pave Application" />
             </div>

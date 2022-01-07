@@ -16,7 +16,9 @@ body
     font-family: 'Lato', sans-serif
     width: 100vw
     scroll-behaviour: smooth
-    position: fixed
+    position: absolute
+    overflow-y: scroll
+    overflow-x: hidden
 
     details[open] summary~*
         animation: sweep .75s ease-in-out
@@ -46,6 +48,10 @@ body
 @media screen and (max-width: 1070px)
     html
         font-size: 16px
+
+@media screen and (max-width: 1023px)
+    *
+        background-attachment: scroll !important
 
 @media screen and (max-width: 350px)
     html

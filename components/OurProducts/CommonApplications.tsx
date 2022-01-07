@@ -19,6 +19,7 @@ const CommonApplications: FC = () => {
                 data-aos="zoom-out-down"
                 data-aos-duration="1000"
                 data-aos-offset="200"
+                className={styles.largeTitle}
             >
                 <Title type="center" text="Common Applications" />
             </div>
