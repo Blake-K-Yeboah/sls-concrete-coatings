@@ -74,16 +74,6 @@ const ColourChart: NextPage = () => {
                 ) : (
                     <>
                         <EpoxyColours />
-                        <p
-                            className={styles.smallText}
-                            data-aos="zoom-out-down"
-                            data-aos-duration="1000"
-                        >
-                            *While all possible care has been taken to reproduce
-                            these colours, South Brisbane Concrete Resurfacing
-                            cannot be held responsible for colour variations of
-                            the finished product.
-                        </p>
                     </>
                 )}
             </main>

@@ -53,10 +53,6 @@ const CommonApplications: FC = () => {
                     so please Contact Us for a free quote and let us show you
                     how to add comfort and value to your home.
                 </p>
-                <small className={styles.guaranteeSmallText}>
-                    *We use and recommend products supplied by Colour Spray.
-                    Work up to $3,300.
-                </small>
             </div>
         </div>
     );

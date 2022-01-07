@@ -66,7 +66,7 @@ const EpoxyFloors: NextPage = () => {
             <AboutTheProduct />
             <CenteredTextSection
                 title="more information"
-                text="Creative Flake Flooring consists of a water based 2 Pac epoxy base coat that adheres permanently to the prepared surface. Whilst the base coat is still wet, an acrylic multi-coloured chip is broadcast over the entire surface and left to dry. The surface is then lightly sanded, vacuumed and then two coats of a clear 2 Pac polyurethane is then applied to seal the acrylic chips and provide a gloss non-slip surface which will look amazing for years to come."
+                text="Creative Flake Flooring consists of a primer that acts as a binding ingredient between the the concrete and epoxy. Then, an epoxy base coat that adheres permanently to the prepared surface is applied. Whilst the base coat is still wet, an acrylic multi-coloured chip is broadcasted over the entire surface and left to dry. The surface is then lightly sanded, vacuumed and then two coats of clear 2 polyurethane is then applied to seal the acrylic chips and provide a gloss non-slip surface which will look amazing for years to come."
             />
             <CenteredTextSection
                 title="additionally"

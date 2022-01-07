@@ -62,7 +62,7 @@ const Gallery: NextPage = () => {
                     data-aos-duration="1000"
                 >
                     {galleryType === "spray-paving"
-                        ? "*CCI products were used to create these stunning finishes."
+                        ? ""
                         : "*Images on this site depict completed epoxy flooring projects. Some images may show alternate products."}
                 </p>
                 <div
