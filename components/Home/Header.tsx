@@ -9,7 +9,7 @@ import gsap from "gsap";
 const Header: FC = () => {
     useEffect(() => {
         gsap.from("#content", { opacity: 0, x: -100, duration: 1.5 });
-        gsap.from("#header-img", { opacity: 0, x: 100, duration: 1.5 });
+        gsap.from("#header-img", { opacity: 0, y: -100, duration: 1.5 });
     }, []);
 
     const router = useRouter();
