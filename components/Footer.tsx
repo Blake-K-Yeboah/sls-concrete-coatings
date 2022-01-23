@@ -50,7 +50,7 @@ const Footer: FC = () => {
             <div className={styles.upper}>
                 <div className={styles.imgContainer}>
                     <Image
-                        src="/images/Logo.jpg"
+                        src="/images/Logo (Updated).png"
                         layout="fill"
                         alt="SLS Logo"
                     />
@@ -91,7 +91,7 @@ const Footer: FC = () => {
             </div>
             <div className={styles.lower}>
                 <p className={styles.lowerText}>
-                    Copyright &copy; 2020-2021 SLS Concrete Coatings
+                    Copyright &copy; 2020-2022 SLS Concrete Coatings
                 </p>
                 <p className={styles.lowerText}>
                     Website designed by
