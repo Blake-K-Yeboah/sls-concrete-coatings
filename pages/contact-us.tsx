@@ -42,8 +42,7 @@ const ContactUs: NextPage = () => {
                         <b>Phone:</b> 0411 810 318
                     </p>
                     <p className={styles.contactInfo}>
-                        <b>Email:</b>{" "}
-                        info@southbrisbaneconcreteresurfacing.com.au
+                        <b>Email:</b> admin@slsconcretecoatings.com.au
                     </p>
                 </div>
                 <div className={styles.contactFormContainer} id="formContainer">
