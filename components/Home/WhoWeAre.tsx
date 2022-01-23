@@ -34,7 +34,7 @@ const WhoWeAre: FC = () => {
                 </div>
                 <div className={styles.imgContainer}>
                     <Image
-                        src="/images/Logo.jpg"
+                        src="/images/Logo (Updated).png"
                         layout="fill"
                         alt="SLS Logo"
                     />
