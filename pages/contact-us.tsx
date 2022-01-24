@@ -39,10 +39,13 @@ const ContactUs: NextPage = () => {
                         Contact Information:
                     </h4>
                     <p className={styles.contactInfo}>
-                        <b>Phone:</b> 0411 810 318
+                        <b>Phone:</b> <a href="tel:0411810318">0411 810 318</a>
                     </p>
                     <p className={styles.contactInfo}>
-                        <b>Email:</b> admin@slsconcretecoatings.com.au
+                        <b>Email:</b>{" "}
+                        <a href="mailto:admin@slsconcretecoatings.com.au">
+                            admin@slsconcretecoatings.com.au
+                        </a>
                     </p>
                 </div>
                 <div className={styles.contactFormContainer} id="formContainer">
