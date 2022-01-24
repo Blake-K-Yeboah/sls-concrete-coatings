@@ -220,7 +220,7 @@ export const epoxyFloorsRanges = {
 export const questionsAndAnswers = [
     {
         question: "What do you use to clean the epoxy? ",
-        answer: "`Epoxy floors are easy to clean. A neutral PH cleaner will suffice - depending on the requirements of the product and application used (whether in a commercial or residential area).",
+        answer: "Epoxy floors are easy to clean. A neutral PH cleaner will suffice - depending on the requirements of the product and application used (whether in a commercial or residential area).",
     },
     {
         question: "Why is an epoxy floor good for a garage?",
@@ -228,7 +228,7 @@ export const questionsAndAnswers = [
     },
     {
         question: "What are the advantages of Seamless Epoxy Floors?",
-        answer: "Seamless – No joints – Regardless of the size of the floor <br> Durable – Very strong than the natural concrete surface Chemical & Acid <br> Resistance – Excellent resistance to most acids and chemicals <br> Various textures – The finish can be installed with any texture you desire, from very smooth to textured for non-skid surface <br> Sanitary – Seamless and non-porous. There is no place for dirt or bacteria to accumulate and grow <br> Easy to maintain – Seamless and non-porous, dirt remains on the surface can be easily cleared away <br> Decorative – Solid colours or thousands of colour combinations",
+        answer: "Seamless – No joints – Regardless of the size of the floor <br> Durable – Much stronger than the natural concrete surface <br> Chemicals and Acid Resistance – Excellent resistance to most acids and chemicals <br> Various textures – The finish can be installed with any texture you desire, from very smooth to textured for non-skid surface <br> Sanitary – Seamless and non-porous. There is no place for dirt or bacteria to accumulate and grow <br> Easy to maintain – Seamless and non-porous, dirt that remains on the surface can be easily cleared away <br> Decorative – Solid colours or thousands of colour combinations",
     },
     {
         question: "What are seamless floors?",
