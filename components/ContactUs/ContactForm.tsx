@@ -5,7 +5,11 @@ import styles from "../../styles/ContactUs.module.sass";
 
 const ContactForm: FC = () => {
     return (
-        <form className={styles.contactForm} method="POST">
+        <form
+            className={styles.contactForm}
+            action="https://formspree.io/f/mnqwjkra"
+            method="POST"
+        >
             <div className={styles.formGroup}>
                 <label htmlFor="name">Name</label>
                 <input
