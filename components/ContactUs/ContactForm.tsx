@@ -21,12 +21,12 @@ const ContactForm: FC = () => {
                 />
             </div>
             <div className={styles.formGroup}>
-                <label htmlFor="address">Address</label>
+                <label htmlFor="suburb">Suburb</label>
                 <input
                     type="text"
-                    name="address"
-                    id="address"
-                    placeholder="Enter your address"
+                    name="suburb"
+                    id="suburb"
+                    placeholder="Enter your suburb"
                     className={styles.input}
                 />
             </div>
