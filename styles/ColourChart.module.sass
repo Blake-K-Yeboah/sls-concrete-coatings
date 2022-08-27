@@ -122,3 +122,21 @@
 
     .selectionText
         margin: 1em 0
+
+    .imgRange
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr))
+
+    .floorBoxImgContainer
+        height: 90px
+
+@media screen and (max-width: 450px)
+    .imgRange
+        grid-template-columns: repeat(auto-fit, minmax(65px, 1fr))
+
+    .floorBoxImgContainer
+        height: 70px
+
+    .floorBoxTitle
+        font-size: .9rem
+        overflow-wrap: break-word
+        width: 100%
