@@ -113,109 +113,483 @@ export const sprayPavingColours = [
 ];
 
 export const epoxyFloorsRanges = {
-    standard: [
+    one: [
         {
-            name: "butter scotch",
+            name: "Alice",
             imgNum: 1,
         },
         {
-            name: "cappuccino",
+            name: "American Granite",
             imgNum: 2,
         },
         {
-            name: "emerald",
+            name: "American Granite",
             imgNum: 3,
         },
         {
-            name: "ghost gum",
+            name: "Angel",
             imgNum: 4,
         },
         {
-            name: "majestic blue",
+            name: "Aqua Berry Punch",
             imgNum: 5,
         },
         {
-            name: "midnight",
+            name: "Armidale Granite",
             imgNum: 6,
         },
         {
-            name: "oatmeal",
+            name: "Australian Camel",
             imgNum: 7,
         },
         {
-            name: "peppercorn",
+            name: "Banana Crush",
             imgNum: 8,
         },
         {
-            name: "ruby",
+            name: "Barn Owl",
             imgNum: 9,
         },
         {
-            name: "sandy beach",
+            name: "Barn Owl (featuring Orange Crush)",
             imgNum: 10,
         },
-    ],
-    stoneLook: [
         {
-            name: "cappuccino",
+            name: "Belle",
             imgNum: 11,
         },
         {
-            name: "ghostgum",
+            name: "Bilby",
             imgNum: 12,
         },
         {
-            name: "majestic blue",
+            name: "Black Opal",
             imgNum: 13,
         },
         {
-            name: "midnight",
+            name: "Black Smoke",
             imgNum: 14,
         },
-    ],
-    designer: [
         {
-            name: "alpine snow",
+            name: "Blue Tongue",
             imgNum: 15,
         },
         {
-            name: "cream brulee",
+            name: "Blueberry Smash",
             imgNum: 16,
         },
         {
-            name: "gold dust",
+            name: "Bluestone",
             imgNum: 17,
         },
         {
-            name: "honeycomb",
+            name: "Camo White",
             imgNum: 18,
         },
         {
-            name: "arctic ice",
+            name: "Candy",
             imgNum: 19,
         },
         {
-            name: "luna grey",
+            name: "Carbonite Grey",
             imgNum: 20,
         },
         {
-            name: "oyster shell",
+            name: "Carbonite Grey (featuring Eggplant Buzz)",
             imgNum: 21,
         },
         {
-            name: "salt & pepper",
+            name: "Coco",
             imgNum: 22,
         },
         {
-            name: "galaxy way",
+            name: "Crocodile",
             imgNum: 23,
         },
         {
-            name: "night sky",
+            name: "Daintree Forest",
             imgNum: 24,
         },
+        {
+            name: "Davy Snow",
+            imgNum: 25,
+        },
+        {
+            name: "Denim Light",
+            imgNum: 26,
+        },
+        {
+            name: "Desert Stone",
+            imgNum: 27,
+        },
+        {
+            name: "Destiny",
+            imgNum: 28,
+        },
+        {
+            name: "Didgeridoo",
+            imgNum: 29,
+        },
+        {
+            name: "Dingo",
+            imgNum: 30,
+        },
+        {
+            name: "Eggplant Buzz",
+            imgNum: 31,
+        },
+        {
+            name: "Emu",
+            imgNum: 32,
+        },
+        {
+            name: "Espresso",
+            imgNum: 33,
+        },
+        {
+            name: "Femwood White",
+            imgNum: 34,
+        },
+        {
+            name: "Firefox",
+            imgNum: 35,
+        },
+        {
+            name: "Firetail",
+            imgNum: 36,
+        },
+        {
+            name: "Frilled Neck",
+            imgNum: 37,
+        },
+        {
+            name: "Great Outback",
+            imgNum: 38,
+        },
+        {
+            name: "Great White",
+            imgNum: 39,
+        },
+        {
+            name: "Hammerhead",
+            imgNum: 40,
+        },
+        {
+            name: "Hope",
+            imgNum: 41,
+        },
+        {
+            name: "Ironstone",
+            imgNum: 42,
+        },
+        {
+            name: "Jasmine",
+            imgNum: 43,
+        },
+        {
+            name: "Kangaroo",
+            imgNum: 44,
+        },
+        {
+            name: "Kiki",
+            imgNum: 45,
+        },
+        {
+            name: "Kookaburra",
+            imgNum: 46,
+        },
+        {
+            name: "Lucy",
+            imgNum: 47,
+        },
+        {
+            name: "Minnie",
+            imgNum: 48,
+        },
+        {
+            name: "Moonlight",
+            imgNum: 49,
+        },
+        {
+            name: "Moroccan Tan",
+            imgNum: 50,
+        },
+        {
+            name: "New Gaol",
+            imgNum: 51,
+        },
+        {
+            name: "Orange Crush",
+            imgNum: 52,
+        },
+        {
+            name: "Penguin",
+            imgNum: 53,
+        },
+        {
+            name: "Platypus",
+            imgNum: 54,
+        },
+        {
+            name: "Platypus (featuring Blueberry smash)",
+            imgNum: 55,
+        },
+        {
+            name: "Rainforest",
+            imgNum: 56,
+        },
+        {
+            name: "Salt & Pepper",
+            imgNum: 57,
+        },
+        {
+            name: "Snowflake",
+            imgNum: 58,
+        },
+        {
+            name: "Sugar Glider",
+            imgNum: 59,
+        },
+        {
+            name: "Slider Glider (featuring Wild Watermelon)",
+            imgNum: 60,
+        },
+        {
+            name: "Sunset",
+            imgNum: 61,
+        },
+        {
+            name: "Swordfish",
+            imgNum: 62,
+        },
+        {
+            name: "Tangerine Crush",
+            imgNum: 63,
+        },
+        {
+            name: "Thurra Dune",
+            imgNum: 64,
+        },
+        {
+            name: "Umber",
+            imgNum: 65,
+        },
+        {
+            name: "Volcano Ash",
+            imgNum: 66,
+        },
+        {
+            name: "Wedgetail",
+            imgNum: 67,
+        },
+        {
+            name: "White Smoke",
+            imgNum: 68,
+        },
+        {
+            name: "White Smoke (featuring Banana Crush)",
+            imgNum: 69,
+        },
+        {
+            name: "Wild Salmon",
+            imgNum: 70,
+        },
+        {
+            name: "Wild Watermelon",
+            imgNum: 71,
+        },
+        {
+            name: "Wombat",
+            imgNum: 72,
+        },
+        {
+            name: "Wombat (featuring Aqua Berry Punch)",
+            imgNum: 73,
+        },
+        {
+            name: "Zara",
+            imgNum: 74,
+        },
+    ],
+    two: [
+        { name: "DURASTONE™ 1.0 Dolomite", imgNum: 1 },
+        { name: "DURASTONE™ 1.0 Galaxy", imgNum: 2 },
+        { name: "DURASTONE™ 1.0 Galaxy", imgNum: 3 },
+        { name: "DURASTONE™ 1.0 Lynx", imgNum: 4 },
+        { name: "DURASTONE™ 1.0 Mocha", imgNum: 5 },
+        { name: "DURASTONE™ 1.0 Mocha", imgNum: 6 },
+        { name: "DURASTONE™ 1.0 Onyx", imgNum: 7 },
+        { name: "DURASTONE™ 1.0 Slate", imgNum: 8 },
+        { name: "DURASTONE™ 1.0 Slate", imgNum: 9 },
+        { name: "DURASTONE™ 2.0 Black Stone", imgNum: 10 },
+        { name: "DURASTONE™ 2.0 Blue Stone", imgNum: 11 },
+        { name: "DURASTONE™ 2.0 Brown Stone", imgNum: 12 },
+        { name: "DURASTONE™ 2.0 Earth Stone", imgNum: 13 },
+        { name: "DURASTONE™ 2.0 Fire Stone", imgNum: 14 },
+        { name: "DURASTONE™ 2.0 Gem Stone", imgNum: 15 },
+        { name: "DURASTONE™ 2.0 Graphite Stone", imgNum: 16 },
+        { name: "DURASTONE™ 2.0 Green Stone", imgNum: 17 },
+        { name: "DURASTONE™ 2.0 Grey Stone", imgNum: 18 },
+        { name: "DURASTONE™ 2.0 Khaki Stone", imgNum: 19 },
+        { name: "DURASTONE™ 2.0 Natural Stone", imgNum: 20 },
+        { name: "DURASTONE™ 2.0 Ocean Stone", imgNum: 21 },
+        { name: "DURASTONE™ 2.0 Quartz Stone", imgNum: 22 },
+        { name: "DURASTONE™ 2.0 Real Stone", imgNum: 23 },
+        { name: "DURASTONE™ 2.0 River Gum Stone", imgNum: 24 },
+        { name: "DURASTONE™ 2.0 Sand Stone", imgNum: 25 },
+        { name: "DURASTONE™ 2.0 Shale Stone", imgNum: 26 },
+        { name: "DURASTONE™ 2.0 Smokey Stone", imgNum: 27 },
+    ],
+    three: [
+        { name: "White Pearl", imgNum: 1 },
+        { name: "Silver Pearl", imgNum: 2 },
+        { name: "Titanium Grey", imgNum: 3 },
+        { name: "Graphite Grey", imgNum: 4 },
+        { name: "Firebird", imgNum: 5 },
+        { name: "Copper", imgNum: 6 },
+        { name: "Walnut", imgNum: 7 },
+        { name: "Goldstone", imgNum: 8 },
+        { name: "Midnight Pearl", imgNum: 9 },
+        { name: "Royal Blue", imgNum: 10 },
+        { name: "Sapphire", imgNum: 11 },
+        { name: "Aqua Green", imgNum: 12 },
+        { name: "Antique Gold", imgNum: 13 },
+        { name: "Moss Green", imgNum: 14 },
+        { name: "Olivine Pearl", imgNum: 15 },
+        { name: "Canary Yellow", imgNum: 16 },
+        { name: "Mahogany", imgNum: 17 },
+        { name: "Deep Ruby", imgNum: 18 },
+        { name: "Fairy Floss", imgNum: 19 },
+        { name: "Amethyst", imgNum: 20 },
+    ],
+    four: [
+        { name: "Pastel Grey", imgNum: 1 },
+        { name: "White", imgNum: 2 },
+        { name: "Neutral Grey", imgNum: 3 },
+        { name: "Lightbox Grey", imgNum: 4 },
+        { name: "Light Grey", imgNum: 5 },
+        { name: "Pipeline Grey", imgNum: 6 },
+        { name: "Koala Grey", imgNum: 7 },
+        { name: "Mid Grey", imgNum: 8 },
+        { name: "Blue Grey", imgNum: 9 },
+        { name: "Lead Grey", imgNum: 10 },
+        { name: "Black", imgNum: 11 },
+        { name: "Pewter", imgNum: 12 },
+        { name: "Dark Grey", imgNum: 13 },
+        { name: "Graphite Grey", imgNum: 14 },
+        { name: "Terracotta", imgNum: 15 },
+        { name: "Driftwood", imgNum: 16 },
+        { name: "Merino", imgNum: 17 },
+        { name: "Wombat", imgNum: 18 },
+        { name: "Mushroom", imgNum: 19 },
+        { name: "Mudstone", imgNum: 20 },
     ],
 };
+
+// export const epoxyFloorsRanges = {
+//     standard: [
+//         {
+//             name: "butter scotch",
+//             imgNum: 1,
+//         },
+//         {
+//             name: "cappuccino",
+//             imgNum: 2,
+//         },
+//         {
+//             name: "emerald",
+//             imgNum: 3,
+//         },
+//         {
+//             name: "ghost gum",
+//             imgNum: 4,
+//         },
+//         {
+//             name: "majestic blue",
+//             imgNum: 5,
+//         },
+//         {
+//             name: "midnight",
+//             imgNum: 6,
+//         },
+//         {
+//             name: "oatmeal",
+//             imgNum: 7,
+//         },
+//         {
+//             name: "peppercorn",
+//             imgNum: 8,
+//         },
+//         {
+//             name: "ruby",
+//             imgNum: 9,
+//         },
+//         {
+//             name: "sandy beach",
+//             imgNum: 10,
+//         },
+//     ],
+//     stoneLook: [
+//         {
+//             name: "cappuccino",
+//             imgNum: 11,
+//         },
+//         {
+//             name: "ghostgum",
+//             imgNum: 12,
+//         },
+//         {
+//             name: "majestic blue",
+//             imgNum: 13,
+//         },
+//         {
+//             name: "midnight",
+//             imgNum: 14,
+//         },
+//     ],
+//     designer: [
+//         {
+//             name: "alpine snow",
+//             imgNum: 15,
+//         },
+//         {
+//             name: "cream brulee",
+//             imgNum: 16,
+//         },
+//         {
+//             name: "gold dust",
+//             imgNum: 17,
+//         },
+//         {
+//             name: "honeycomb",
+//             imgNum: 18,
+//         },
+//         {
+//             name: "arctic ice",
+//             imgNum: 19,
+//         },
+//         {
+//             name: "luna grey",
+//             imgNum: 20,
+//         },
+//         {
+//             name: "oyster shell",
+//             imgNum: 21,
+//         },
+//         {
+//             name: "salt & pepper",
+//             imgNum: 22,
+//         },
+//         {
+//             name: "galaxy way",
+//             imgNum: 23,
+//         },
+//         {
+//             name: "night sky",
+//             imgNum: 24,
+//         },
+//     ],
+// };
 
 export const questionsAndAnswers = [
     {
