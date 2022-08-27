@@ -29,7 +29,7 @@ const ColourChart: NextPage = () => {
         });
     }, []);
 
-    const [galleryType, setGalleryType] = useState<string>("spray-paving");
+    const [galleryType, setGalleryType] = useState<string>("epoxy-floors");
 
     const selectChangeHandler = (e: React.ChangeEvent<HTMLSelectElement>) =>
         setGalleryType(e.target.value);
