@@ -39,8 +39,6 @@ const EpoxyFloors: NextPage = () => {
                 <div className={styles.content} id="epoxyFloorsHeaderContent">
                     <Title type="left" text="Epoxy Seamless Floors" />
                     <p className={styles.text}>
-                        In 2008 our advanced range of Creative Flake products
-                        was launched to cater for growing demand and popularity.
                         Creative Flake flooring is a 2 part epoxy seamless
                         flooring system with a range of stunning, colourful
                         acrylic flakes incorporated into the finish.
