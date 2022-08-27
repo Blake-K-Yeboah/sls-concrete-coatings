@@ -6,7 +6,6 @@ import styles from "../../styles/ColourChart.module.sass";
 
 // Data
 import { epoxyFloorsRanges } from "../../data";
-import SprayPavingColours from "./SprayPavingColours";
 
 const EpoxyColours: FC = () => {
     return (
@@ -17,19 +16,19 @@ const EpoxyColours: FC = () => {
                     data-aos="flip-down"
                     data-aos-duration="1000"
                 >
-                    Creative Flake Standard Colour Range
+                    COLOUR FLAKE™ Epoxy Flake Flooring
                 </summary>
 
                 <div className={styles.imgRange}>
-                    {epoxyFloorsRanges.standard.map((floor) => {
+                    {epoxyFloorsRanges.one.map((floor) => {
                         return (
                             <div
                                 className={styles.floorBoxContainer}
-                                key={floor.name}
+                                key={floor.name + floor.imgNum}
                             >
                                 <div className={styles.floorBoxImgContainer}>
                                     <Image
-                                        src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
+                                        src={`/images/colours/epoxy-floors/new/1/Image (${floor.imgNum}).jpg`}
                                         layout="fill"
                                         alt="Epoxy Floor"
                                     />
@@ -48,19 +47,19 @@ const EpoxyColours: FC = () => {
                     data-aos="flip-down"
                     data-aos-duration="1000"
                 >
-                    Creative Flake Stone Look Range
+                    DURASTONE™ 1.0 & 2.0 Epoxy Flake Flooring
                 </summary>
 
                 <div className={styles.imgRange}>
-                    {epoxyFloorsRanges.stoneLook.map((floor) => {
+                    {epoxyFloorsRanges.two.map((floor) => {
                         return (
                             <div
                                 className={styles.floorBoxContainer}
-                                key={floor.name}
+                                key={floor.name + floor.imgNum}
                             >
                                 <div className={styles.floorBoxImgContainer}>
                                     <Image
-                                        src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
+                                        src={`/images/colours/epoxy-floors/new/2/Image (${floor.imgNum}).jpg`}
                                         layout="fill"
                                         alt="Epoxy Floor"
                                     />
@@ -79,19 +78,19 @@ const EpoxyColours: FC = () => {
                     data-aos="flip-down"
                     data-aos-duration="1000"
                 >
-                    Creative Flake Designer Colour Range
+                    Metallic Art Epoxy EP100® 100% Solid Epoxy
                 </summary>
 
                 <div className={styles.imgRange}>
-                    {epoxyFloorsRanges.designer.map((floor) => {
+                    {epoxyFloorsRanges.three.map((floor) => {
                         return (
                             <div
                                 className={styles.floorBoxContainer}
-                                key={floor.name}
+                                key={floor.name + floor.imgNum}
                             >
                                 <div className={styles.floorBoxImgContainer}>
                                     <Image
-                                        src={`/images/colours/epoxy-floors/Image (${floor.imgNum}).jpg`}
+                                        src={`/images/colours/epoxy-floors/new/3/Image (${floor.imgNum}).jpg`}
                                         layout="fill"
                                         alt="Epoxy Floor"
                                     />
@@ -110,9 +109,29 @@ const EpoxyColours: FC = () => {
                     data-aos="flip-down"
                     data-aos-duration="1000"
                 >
-                    Ultra Epoxy Industrial Flooring Colour Range
+                    EPOXY EP200™ 100% Solids - Epoxy Flooring
                 </summary>
-                <SprayPavingColours />
+                <div className={styles.imgRange}>
+                    {epoxyFloorsRanges.four.map((floor) => {
+                        return (
+                            <div
+                                className={styles.floorBoxContainer}
+                                key={floor.name + floor.imgNum}
+                            >
+                                <div className={styles.floorBoxImgContainer}>
+                                    <Image
+                                        src={`/images/colours/epoxy-floors/new/4/Image (${floor.imgNum}).jpg`}
+                                        layout="fill"
+                                        alt="Epoxy Floor"
+                                    />
+                                </div>
+                                <p className={styles.floorBoxTitle}>
+                                    {floor.name}
+                                </p>
+                            </div>
+                        );
+                    })}
+                </div>
             </details>
         </div>
     );
