@@ -10,10 +10,12 @@ interface IProps {
 const ImageGrid: FC<IProps> = (props) => {
     const [activeImg, setActiveImg] = useState<string | null>(null);
 
+    const imagesLength = props.galleryType === "spray-paving" ? 17 : 60;
+
     return (
         <>
             <div className={styles.imgGrid}>
-                {Array.from(Array(16).keys()).map((i) => {
+                {Array.from(Array(imagesLength).keys()).map((i) => {
                     const imgSrc = `/images/gallery/${
                         props.galleryType
                     }/Image (${i + 1}).jpg`;
