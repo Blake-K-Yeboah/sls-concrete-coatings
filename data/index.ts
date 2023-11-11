@@ -13,103 +13,170 @@ export const applications: string[] = [
     "Laundries",
 ];
 
+// Old Colors
+// export const sprayPavingColours = [
+//     {
+//         name: "white",
+//         color: "#fff",
+//     },
+//     {
+//         name: "lightstone",
+//         color: "#E4E3D9",
+//     },
+//     {
+//         name: "sandstone",
+//         color: "#E3DDA9",
+//     },
+//     {
+//         name: "buff",
+//         color: "#DABB78",
+//     },
+//     {
+//         name: "beige",
+//         color: "#D1B68B",
+//     },
+//     {
+//         name: "rust",
+//         color: "#BB8A2E",
+//     },
+//     {
+//         name: "cinnamon",
+//         color: "#AB8449",
+//     },
+//     {
+//         name: "tan",
+//         color: "#774E10",
+//     },
+//     {
+//         name: "salmon",
+//         color: "#DABFA2",
+//     },
+//     {
+//         name: "coffee",
+//         color: "#88735D",
+//     },
+//     {
+//         name: "mango",
+//         color: "#C8872B",
+//     },
+//     {
+//         name: "terracotta",
+//         color: "#9E5520",
+//     },
+//     {
+//         name: "brick red",
+//         color: "#98362D",
+//     },
+//     {
+//         name: "heritage green",
+//         color: "#005B56",
+//     },
+//     {
+//         name: "stormy",
+//         color: "#376080",
+//     },
+//     {
+//         name: "marine blue",
+//         color: "#2A70AE",
+//     },
+//     {
+//         name: "purple",
+//         color: "#3C3C92",
+//     },
+//     {
+//         name: "plum",
+//         color: "#7D6F68",
+//     },
+//     {
+//         name: "oyster",
+//         color: "#A6A6A6",
+//     },
+//     {
+//         name: "blue gum",
+//         color: "#939389",
+//     },
+//     {
+//         name: "blue stone",
+//         color: "#696A6C",
+//     },
+//     {
+//         name: "silver grey",
+//         color: "#696A5C",
+//     },
+//     {
+//         name: "charcoal",
+//         color: "#4A545D",
+//     },
+//     {
+//         name: "black",
+//         color: "#272526",
+//     },
+// ];
+
 export const sprayPavingColours = [
-    {
-        name: "white",
-        color: "#fff",
-    },
-    {
-        name: "lightstone",
-        color: "#E4E3D9",
-    },
-    {
-        name: "sandstone",
-        color: "#E3DDA9",
-    },
-    {
-        name: "buff",
-        color: "#DABB78",
-    },
-    {
-        name: "beige",
-        color: "#D1B68B",
-    },
-    {
-        name: "rust",
-        color: "#BB8A2E",
-    },
-    {
-        name: "cinnamon",
-        color: "#AB8449",
-    },
-    {
-        name: "tan",
-        color: "#774E10",
-    },
-    {
-        name: "salmon",
-        color: "#DABFA2",
-    },
-    {
-        name: "coffee",
-        color: "#88735D",
-    },
-    {
-        name: "mango",
-        color: "#C8872B",
-    },
-    {
-        name: "terracotta",
-        color: "#9E5520",
-    },
-    {
-        name: "brick red",
-        color: "#98362D",
-    },
-    {
-        name: "heritage green",
-        color: "#005B56",
-    },
-    {
-        name: "stormy",
-        color: "#376080",
-    },
-    {
-        name: "marine blue",
-        color: "#2A70AE",
-    },
-    {
-        name: "purple",
-        color: "#3C3C92",
-    },
-    {
-        name: "plum",
-        color: "#7D6F68",
-    },
-    {
-        name: "oyster",
-        color: "#A6A6A6",
-    },
-    {
-        name: "blue gum",
-        color: "#939389",
-    },
-    {
-        name: "blue stone",
-        color: "#696A6C",
-    },
-    {
-        name: "silver grey",
-        color: "#696A5C",
-    },
-    {
-        name: "charcoal",
-        color: "#4A545D",
-    },
-    {
-        name: "black",
-        color: "#272526",
-    },
+    { name: "Deep Ocean®", color: "rgb(54, 65, 82)" },
+    { name: "Torres Blue", color: "rgb(29, 84, 104)" },
+    { name: "Dune®", color: "rgb(177, 173, 163)" },
+    { name: "Clay", color: "rgb(141, 95, 72)" },
+    { name: "Chocolate", color: "rgb(93, 69, 57)" },
+    { name: "Apricot", color: "rgb(194, 151, 109)" },
+    { name: "Gully™", color: "rgb(133, 126, 115)" },
+    { name: "Evening Haze®", color: "rgb(197, 194, 170)" },
+    { name: "Paperbark®", color: "rgb(202, 191, 164)" },
+    { name: "Raccoon", color: "rgb(90, 88, 88)" },
+    { name: "Jasper®", color: "rgb(108, 97, 83)" },
+    { name: "Mission Brown", color: "rgb(47, 35, 35)" },
+    { name: "Stone", color: "rgb(150, 143, 127)" },
+    { name: "Sycamore", color: "rgb(67, 63, 59)" },
+    { name: "Wallaby®", color: "rgb(127, 124, 120)" },
+    { name: "Wheat", color: "rgb(189, 167, 128)" },
+    { name: "Terrain®", color: "rgb(103, 67, 46)" },
+    { name: "Cove™", color: "rgb(165, 159, 138)" },
+    { name: "Cottage Green®", color: "rgb(48, 76, 60)" },
+    { name: "Grey Green", color: "rgb(101, 107, 101)" },
+    { name: "Protector", color: "rgb(113, 119, 114)" },
+    { name: "Mangrove®", color: "rgb(115, 117, 98)" },
+    { name: "Mountain Green", color: "rgb(65, 107, 87)" },
+    { name: "Pale Eucalypt®", color: "rgb(124, 132, 106)" },
+    { name: "Silver Screen", color: "rgb(212, 207, 203)" },
+    { name: "Black Domino", color: "rgb(60, 62, 63)" },
+    { name: "Woodland Grey®", color: "rgb(75, 76, 70)" },
+    { name: "Lead Grey", color: "rgb(74, 74, 80)" },
+    { name: "Ironstone®", color: "rgb(62, 52, 60)" },
+    { name: "Monument®", color: "rgb(50, 50, 51)" },
+    { name: "Tick Tock", color: "rgb(73, 73, 83)" },
+    { name: "Slate Grey", color: "rgb(72, 81, 80)" },
+    { name: "Shale Grey™", color: "rgb(189, 191, 186)" },
+    { name: "Night Sky®", color: "rgb(18, 13, 19)" },
+    { name: "Charcoal", color: "rgb(39, 50, 52)" },
+    { name: "Basalt®", color: "rgb(109, 108, 110)" },
+    { name: "Windspray®", color: "rgb(136, 139, 138)" },
+    { name: "Roof Red", color: "rgb(120, 49, 43)" },
+    { name: "Indian Red", color: "rgb(57, 26, 32)" },
+    { name: "Manor Red®", color: "rgb(94, 29, 14)" },
+    { name: "Tamborine", color: "rgb(89, 9, 18)" },
+    { name: "Tuscan Red", color: "rgb(136, 53, 37)" },
+    { name: "Coast Terracotta", color: "rgb(150, 79, 47)" },
+    { name: "Pale Terracotta", color: "rgb(179, 147, 122)" },
+    { name: "Mid Terracotta", color: "rgb(142, 79, 36)" },
+    { name: "Old Terracotta", color: "rgb(133, 58, 26)" },
+    { name: "Tile Terracotta", color: "rgb(177, 111, 77)" },
+    { name: "Tuscany", color: "rgb(183, 131, 94)" },
+    { name: "Cloudy Quarter", color: "rgb(240, 239, 237)" },
+    { name: "Cloud 9", color: "rgb(231, 229, 226)" },
+    { name: "Classic Cream", color: "rgb(233, 220, 184)" },
+    { name: "Bright White", color: "rgb(247, 248, 244)" },
+    { name: "Bright On White", color: "rgb(236, 239, 240)" },
+    { name: "Arctic White", color: "rgb(245, 245, 245)" },
+    { name: "Fantan", color: "rgb(235, 216, 201)" },
+    { name: "Heirloom", color: "rgb(239, 234, 224)" },
+    { name: "Essential White", color: "rgb(238, 236, 229)" },
+    { name: "Modern White", color: "rgb(231, 234, 234)" },
+    { name: "Modern White Quarter", color: "rgb(241, 242, 241)" },
+    { name: "Silence", color: "rgb(235, 233, 224)" },
+    { name: "Snowfall", color: "rgb(230, 230, 223)" },
+    { name: "Surfmist", color: "rgb(228, 226, 213)" },
+    { name: "Trader Half", color: "rgb(227, 225, 216)" },
 ];
 
 export const epoxyFloorsRanges = {
